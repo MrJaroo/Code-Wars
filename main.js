@@ -7,3 +7,8 @@ const flauer = [
 one = n => flauer[n % 3];
 
 
+floor = n => {
+    return n == 15 ? n - 2 : n
+}
+
+console.log(floor(15))
