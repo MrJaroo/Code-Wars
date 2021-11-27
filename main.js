@@ -12,3 +12,9 @@ floor = n => {
 }
 
 console.log(floor(15))
+
+let html = [{
+    id : 'el1',
+    name : 'gitar shop'
+}];
+
