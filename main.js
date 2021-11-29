@@ -38,6 +38,14 @@ century = year => {
     return Math.floor(year / 100) + 1
 
 }
-
 console.log(century(1601));
 
+
+console.log(31 / 2);
+
+words = word => {
+    let rem = word.split("").reverse().join("");
+    return rem;
+}
+
+console.log(words("hello"));
