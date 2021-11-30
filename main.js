@@ -49,3 +49,11 @@ words = word => {
 }
 
 console.log(words("hello"));
+
+sringToNumber = (str) => {
+    let num = Number(str);
+    return num;
+}
+
+console.log(sringToNumber('1234'));
+console.log('1234');
