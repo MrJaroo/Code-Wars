@@ -57,3 +57,32 @@ sringToNumber = (str) => {
 
 console.log(sringToNumber('1234'));
 console.log('1234');
+
+even_or_odd = number => {
+    if (number % 2 === 0) return 'Even'
+
+    else return 'Odd';
+}
+
+console.log(even_or_odd(2));
+
+booleanToStirng = b => {
+    return b.toString();
+}
+
+abbrevName = name => {
+    return name.toUpperCase()
+    .split(' ')
+    .map(x => x[0])
+    .join('.')
+}
+
+console.log(abbrevName('SAM SDFSF'))
+
+let aName = 'Hello Parish'
+let bName = aName.split(' ');
+console.log(bName);
+
+
+
+
