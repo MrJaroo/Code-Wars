@@ -87,16 +87,55 @@ console.log(bName);
 let count = 0;
 function cc(card) {
     let cards = /[JQKA]/;
-    if(card > 1 && card < 7) count++
-    else if(card === 10 || cards.test()) count--
+    if (card > 1 && card < 7) count++
+    else if (card === 10 || cards.test(card)) count--
 
-    if(count > 0) return `${count} Bet`
+    if (count > 0) return `${count} Bet`
     return `${count} Hold`
-    
+
 }
 
+function DNAtoRNA(dna) {
+    return dna.replace(/T/g, 'U')
+}
+console.log(DNAtoRNA('StsdfTT'));
+
+function boolToWord(bool) {
+    // if (bool == true) {
+    //     return "Yes"
+    // }
+    // else if (bool == false) return "No"
+    // let a = '';
+    // switch(bool) {
+    //     case true: {
+    //         a = 'Yes'
+    //         break
+    //     }
+    //     case false: {
+    //         a = 'No'
+    //         break
+    //     }
+    // }
+    // return a;
+    return bool ? 'Yes' : 'No';
+}
+console.log(boolToWord(true));
 
 
+numberToString = num => {
+    return num.toString();
+}
+console.log(numberToString(12));
 
+cockroachSpeed = s => Math.floor((s * 100) / 3.6);
+console.log(cockroachSpeed(1.01));
+
+const otherAngel = (a, b) => 180 - a - b;
+console.log(otherAngel(43, 78));
+
+function twiceAdOld(dadYearsOld, sonYearsOld) {
+    return Math.abs(dadYearsOld - (sonYearsOld * 2));
+}
+console.log(twiceAdOld(36, 7));
 
 
