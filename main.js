@@ -72,9 +72,9 @@ booleanToStirng = b => {
 
 abbrevName = name => {
     return name.toUpperCase()
-    .split(' ')
-    .map(x => x[0])
-    .join('.')
+        .split(' ')
+        .map(x => x[0])
+        .join('.')
 }
 
 console.log(abbrevName('SAM SDFSF'))
@@ -82,6 +82,20 @@ console.log(abbrevName('SAM SDFSF'))
 let aName = 'Hello Parish'
 let bName = aName.split(' ');
 console.log(bName);
+
+
+let count = 0;
+function cc(card) {
+    let cards = /[JQKA]/;
+    if(card > 1 && card < 7) count++
+    else if(card === 10 || cards.test()) count--
+
+    if(count > 0) return `${count} Bet`
+    return `${count} Hold`
+    
+}
+
+
 
 
 
