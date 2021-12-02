@@ -138,4 +138,10 @@ function twiceAdOld(dadYearsOld, sonYearsOld) {
 }
 console.log(twiceAdOld(36, 7));
 
+function getVolumeOfCuboid(letgth, width, height) {
+    return letgth * width * height;
+}
+console.log('Cuboid')
+console.log(getVolumeOfCuboid(6.3,2,5))
+
 
