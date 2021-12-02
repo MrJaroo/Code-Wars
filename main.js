@@ -142,6 +142,18 @@ function getVolumeOfCuboid(letgth, width, height) {
     return letgth * width * height;
 }
 console.log('Cuboid')
-console.log(getVolumeOfCuboid(6.3,2,5))
+console.log(getVolumeOfCuboid(6.3, 2, 5))
+
+function nthEven(n) {
+    return (n * 2) - 2;
+}
+console.log(nthEven(1298734))
+
+function time(h, m, s) {
+    return (h * 3600000) + (m * 60000) + (s * 1000 )
+}
+
+console.log(time(0,1,1))
+
 
 
