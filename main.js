@@ -155,5 +155,16 @@ function time(h, m, s) {
 
 console.log(time(0,1,1))
 
+multiplication = number => {
+    if(number % 2 === 0) {
+        return number * 8
+    }
+    else{
+        return number * 9;
+    }
+}
+
+console.log(multiplication(5))
+
 
 
