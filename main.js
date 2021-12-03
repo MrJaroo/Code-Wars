@@ -150,21 +150,59 @@ function nthEven(n) {
 console.log(nthEven(1298734))
 
 function time(h, m, s) {
-    return (h * 3600000) + (m * 60000) + (s * 1000 )
+    return (h * 3600000) + (m * 60000) + (s * 1000)
 }
 
-console.log(time(0,1,1))
+console.log(time(0, 1, 1))
 
 multiplication = number => {
-    if(number % 2 === 0) {
+    if (number % 2 === 0) {
         return number * 8
     }
-    else{
+    else {
         return number * 9;
     }
 }
 
 console.log(multiplication(5))
+
+function areaOrPerimeter(l, w) {
+    // if(l == w) {
+    //     return l * w
+    // }
+    // else {
+    //     return 2 * (l + w);
+    // }
+    return l == w ? l * w : 2 * (l + w);
+}
+
+console.log("areaOrPerimeter")
+console.log(areaOrPerimeter(5, 5))
+
+isDivisivle = (n, x, y) => {
+    // if(n % x == 0 && n % y == 0){
+    //     return true
+    // }
+
+    // else {
+    //     return false
+    // }
+
+    return n % x == 0 && n % y == 0 ? true : false;
+
+}
+console.log('isDivisivele')
+console.log(isDivisivle(12, 3, 4))
+
+doubleTnteger = i => i * 2;
+console.log('doubleTnteger')
+console.log(doubleTnteger(2));
+
+makeNegative = num => {
+    return ~num;
+}
+
+
 
 
 
