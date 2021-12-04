@@ -198,11 +198,10 @@ doubleTnteger = i => i * 2;
 console.log('doubleTnteger')
 console.log(doubleTnteger(2));
 
-makeNegative = num => {
-    return ~num;
-}
+makeNegative = num => num < 0 ? num : num / -1
+console.log(makeNegative(-56))
 
-
-
+addFive = num => num + 5;
+console.log(addFive(5));
 
 
