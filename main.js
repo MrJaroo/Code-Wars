@@ -204,4 +204,55 @@ console.log(makeNegative(-56))
 addFive = num => num + 5;
 console.log(addFive(5));
 
+move = (position, roll) => {
+    return (roll + roll) + position;
+}
+console.log(move(0, 4));
+
+repeatStr = (n, s) => {
+    let star = ''
+    for (let i = 0; i < n; i++) {
+        star += s
+    }
+    return star
+}
+console.log(repeatStr(10, "*"));
+
+
+// function isCoprime(x, y) {
+//     let a = [];
+//     let b = [];
+//     for (let i = 0; i <= x; i++) {
+//         if (x % i == 0) {
+//             a.push(i)
+//         }
+//     }
+//     for (let i = 0; i <= y; i++) {
+//         if (y % i == 0) {
+//             b.push(i);
+//         }
+//     }
+//     let ab = a.concat(b);
+//     let duplicates = [];
+
+// }
+// console.log(isCoprime(20, 27))
+
+let buttonCard = document.querySelector('.btn-card');
+let inputCard = document.querySelector('.card');
+let outCard = document.querySelector('.out-card')
+
+
+
+function t1() {
+    let val = inputCard.value;
+    
+    let a = inputCard.value.split(/(\d{4})/g);
+    let b = a.join(' ')
+   
+    outCard.innerHTML = b;
+    console.log(val.lenght)
+}
+
+buttonCard.onclick = t1;
 
