@@ -246,13 +246,21 @@ let outCard = document.querySelector('.out-card')
 
 function t1() {
     let val = inputCard.value;
-    
+
     let a = inputCard.value.split(/(\d{4})/g);
     let b = a.join(' ')
-   
+
     outCard.innerHTML = b;
     console.log(val.lenght)
 }
 
 buttonCard.onclick = t1;
 
+
+function expressionMatter(a, b, c) {
+    return Math.max(a * (b + c), a * b * c, (a + b) * c, a + b + c)
+}
+console.log(expressionMatter(5,1,3))
+
+oppsite = number => number > 0 ? -Math.abs(number) : Math.abs(number)
+console.log(oppsite(-344));
