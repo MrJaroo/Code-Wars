@@ -265,11 +265,24 @@ console.log(expressionMatter(5, 1, 3))
 oppsite = number => number > 0 ? -Math.abs(number) : Math.abs(number)
 console.log(oppsite(-344));
 
-lovefunc = (flower1, flower2) =>  flower1 % 2 !== flower2 % 2;
+lovefunc = (flower1, flower2) => flower1 % 2 !== flower2 % 2;
 console.log(lovefunc(0, 1));
 
 liters = time => {
-    return Math.round(time  * 0.5);
+    return Math.floor(time * 0.5);
 }
 console.log('Liters')
 console.log(liters(1))
+
+square = num => Math.pow(num, 2);
+console.log(square(3));
+
+bettwen = (a, b) => {
+    let arr = [];
+    for (let i = a; i <= b; i++) {
+        arr.push(i)
+    }
+    return arr;
+}
+
+console.log(bettwen(-2, 5));
