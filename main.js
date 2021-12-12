@@ -286,3 +286,46 @@ bettwen = (a, b) => {
 }
 
 console.log(bettwen(-2, 5));
+
+pipeFix = numbers => {
+    let a = [];
+    for (let i = numbers[0]; i <= numbers[numbers.length - 1]; i++) {
+        a.push(i)
+    }
+    return a
+
+}
+
+console.log(pipeFix([1, 2, 3]));
+
+bump = x => {
+    let a = x.split('');
+    let num = 0;
+    for (let i in a) {
+        if(a[i] == 'n'){
+            num++
+        }
+        
+    }
+
+    if(num > 15){
+        return 'Car Dead'
+    }
+    else return 'Woohoo!'
+}
+
+console.log(bump('__nnn__nnn__nnn__n_nnnn_n'))
+
+hoopCount = n => {
+    if(n >= 10) return "Great, now move on to tricks"
+    else return 'Keep at it untill you get it'
+}
+
+console.log(hoopCount(3))
+console.log(hoopCount(11))
+
+const binaryArrayToNumber = arr => {
+
+}
+
+console.log(72 % 13)
