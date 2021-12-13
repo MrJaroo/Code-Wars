@@ -302,13 +302,13 @@ bump = x => {
     let a = x.split('');
     let num = 0;
     for (let i in a) {
-        if(a[i] == 'n'){
+        if (a[i] == 'n') {
             num++
         }
-        
+
     }
 
-    if(num > 15){
+    if (num > 15) {
         return 'Car Dead'
     }
     else return 'Woohoo!'
@@ -317,7 +317,7 @@ bump = x => {
 console.log(bump('__nnn__nnn__nnn__n_nnnn_n'))
 
 hoopCount = n => {
-    if(n >= 10) return "Great, now move on to tricks"
+    if (n >= 10) return "Great, now move on to tricks"
     else return 'Keep at it untill you get it'
 }
 
@@ -328,4 +328,76 @@ const binaryArrayToNumber = arr => {
 
 }
 
-console.log(72 % 13)
+remainder = (a, b) => a < b ? b % a : a % b;
+console.log(remainder(13, 72))
+
+paperwork = (n, m) => {
+    if (n > 0 && m > 0) {
+        return n * m;
+    }
+    if (n < 0 && m < 0) {
+        return 0
+    }
+    if (n > 0 && m <= 0) {
+        return 0
+    }
+}
+console.log('paperwork')
+console.log(paperwork(5, 0))
+
+countSheeps = arrayOfSheeps => {
+    let a = 0;
+    for (let i = 0; i < arrayOfSheeps.length; i++)
+        if (arrayOfSheeps[i] == true)
+            a++;
+    return a
+}
+
+console.log(countSheeps([true, false, true, true]))
+
+// unitTottal = (str) => {
+//     let strArr = str.split('');
+//     for(let i = 0; i < strArr.length; i++){
+//         if(strArr[i] == 'A'.toLocaleLowerCase()) {
+//             let a = 97 * i;
+//         }
+//         if(strArr[i] == 'B'.toLocaleLowerCase()) let b = 98 * i;
+
+//     }
+//     let sum = a + b;
+//     return sum;
+// }
+
+// console.log(unitTottal('ABaa'))
+
+findDifference = (a, b) => {
+    let cumb1 = a[0] * a[1] * a[2];
+    let cumb2 = b[0] * b[1] * b[2];
+    return Math.abs(cumb1 - cumb2)
+
+}
+console.log('findDifference')
+console.log(findDifference([8, 14, 19], [15, 15, 30]))
+
+const findAverage = array => {
+    // let num = 0;
+    // for(let i = 0; i < array.length; i++){
+    //     num += array[i] / array.length;
+    // }
+    // return num;
+    return array.reduce((a, b) => a + b) / array.length;
+}
+console.log("findAverge")
+console.log(findAverage([3, 74, 84]))
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    let sum = mpg * fuelLeft;
+    if( sum >= distanceToPump){
+        return true
+    }
+    else {
+        return false
+    }
+}
+
+console.log(zeroFuel(100,50,1))
