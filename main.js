@@ -2,8 +2,7 @@ function one(n) {
     if (n <= 0) return n;
     else if (n >= 13) {
         return n - 2;
-    }
-    else {
+    } else {
         return n - 1;
     }
 }
@@ -13,12 +12,9 @@ console.log(one(15));
 function rentalCarCost(d) {
     if (d >= 3 && d < 6) {
         return (40 * d) - 20;
-    }
-    else if (d >= 7) {
+    } else if (d >= 7) {
         return (40 * d) - 50
-    }
-
-    else {
+    } else {
         return 40 * d;
     }
 
@@ -30,8 +26,7 @@ console.log('Next')
 century = year => {
     if (year.lenght < 3) {
         return 1;
-    }
-    else if (year % 100 === 0) {
+    } else if (year % 100 === 0) {
         return year / 100
     }
 
@@ -85,6 +80,7 @@ console.log(bName);
 
 
 let count = 0;
+
 function cc(card) {
     let cards = /[JQKA]/;
     if (card > 1 && card < 7) count++
@@ -98,6 +94,7 @@ function cc(card) {
 function DNAtoRNA(dna) {
     return dna.replace(/T/g, 'U')
 }
+
 console.log(DNAtoRNA('StsdfTT'));
 
 function boolToWord(bool) {
@@ -119,6 +116,7 @@ function boolToWord(bool) {
     // return a;
     return bool ? 'Yes' : 'No';
 }
+
 console.log(boolToWord(true));
 
 
@@ -136,17 +134,20 @@ console.log(otherAngel(43, 78));
 function twiceAdOld(dadYearsOld, sonYearsOld) {
     return Math.abs(dadYearsOld - (sonYearsOld * 2));
 }
+
 console.log(twiceAdOld(36, 7));
 
 function getVolumeOfCuboid(letgth, width, height) {
     return letgth * width * height;
 }
+
 console.log('Cuboid')
 console.log(getVolumeOfCuboid(6.3, 2, 5))
 
 function nthEven(n) {
     return (n * 2) - 2;
 }
+
 console.log(nthEven(1298734))
 
 function time(h, m, s) {
@@ -158,8 +159,7 @@ console.log(time(0, 1, 1))
 multiplication = number => {
     if (number % 2 === 0) {
         return number * 8
-    }
-    else {
+    } else {
         return number * 9;
     }
 }
@@ -243,7 +243,6 @@ let inputCard = document.querySelector('.card');
 let outCard = document.querySelector('.out-card')
 
 
-
 function t1() {
     let val = inputCard.value;
 
@@ -260,6 +259,7 @@ buttonCard.onclick = t1;
 function expressionMatter(a, b, c) {
     return Math.max(a * (b + c), a * b * c, (a + b) * c, a + b + c)
 }
+
 console.log(expressionMatter(5, 1, 3))
 
 oppsite = number => number > 0 ? -Math.abs(number) : Math.abs(number)
@@ -310,8 +310,7 @@ bump = x => {
 
     if (num > 15) {
         return 'Car Dead'
-    }
-    else return 'Woohoo!'
+    } else return 'Woohoo!'
 }
 
 console.log(bump('__nnn__nnn__nnn__n_nnnn_n'))
@@ -392,12 +391,27 @@ console.log(findAverage([3, 74, 84]))
 
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
     let sum = mpg * fuelLeft;
-    if( sum >= distanceToPump){
+    if (sum >= distanceToPump) {
         return true
-    }
-    else {
+    } else {
         return false
     }
 }
 
-console.log(zeroFuel(100,50,1))
+console.log(zeroFuel(100, 50, 1))
+
+const shortcut = string => {
+    if(string.toLowerCase()){
+        return string.replace(/[aeiou]/g, '');
+    }
+    if(string.toUpperCase()){
+        return string
+    }
+
+
+
+}
+
+
+console.log('shortcut');
+console.log(shortcut('hello'));
